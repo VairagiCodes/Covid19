@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    >
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/nightRel"
+        android:background="@color/backColor"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_night"
+            android:layout_marginStart="10dp"
+            android:id="@+id/nightImage"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dark_mode"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:textColor="#757575"
+            android:fontFamily="sans-serif-light"
+            android:layout_toEndOf="@id/nightImage"
+            />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/nightButton"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/nightRel"
+        android:id="@+id/nightRe2"
+        android:background="@color/backColor"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_notification"
+            android:layout_marginStart="10dp"
+            android:id="@+id/notificationImage"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_notifications"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:textColor="#757575"
+            android:fontFamily="sans-serif-light"
+            android:layout_toEndOf="@id/notificationImage"
+            />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/notificationButton"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/nightRe2"
+        android:background="@android:color/white"
+        android:listSelector="@android:color/transparent"
+        />
+
+</RelativeLayout>
+

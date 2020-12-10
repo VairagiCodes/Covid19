@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3C8CEF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#3C8CEF</color>
+    <color name="textColorEarthquakeLocation">#e1e1e1</color>
+    <color name="backColor">#121212</color>
+    <color name="bottomNavColor">#121212</color>
+    <color name="bottomNavTextColor">#3C8CEF</color>
+    <color name="toolBarColor">#1f1f1f</color>
+    <color name="textColor">#e1e1e1</color>
+    <color name="aboutBackColor">#121212</color>
+    <color name="drawerLineColor">#2F2F2F</color>
+    <color name="detailActColor">#424242</color>
+    <color name="desColor">#e1e1e1</color>
+</resources>

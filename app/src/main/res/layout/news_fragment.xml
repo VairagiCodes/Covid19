@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    >
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/swipeToRefresh"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv1"
+            android:paddingBottom="50dp"
+            android:clipToPadding="false"
+            />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeToRefresh1"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/empty_view"
+            android:layout_centerInParent="true"
+
+            >
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:id="@+id/ghost"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/sub_text"
+                android:id="@+id/ghost_text"
+                android:layout_centerHorizontal="true"
+                android:textSize="21sp"
+                android:textColor="@color/textColorEarthquakeLocation"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sub_text"
+                android:textStyle="normal"
+                android:textColor="@color/textColorEarthquakeLocation"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_above="@id/tryAgainButton"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:background="@drawable/rouded_button"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tryAgainButton"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:text="@string/try_again"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_loading"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_loading_end"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        />
+
+
+</RelativeLayout>

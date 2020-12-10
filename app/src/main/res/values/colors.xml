@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3C8CEF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#3C8CEF</color>
+    <color name="bottomNavColor">#fafafa</color>
+    <color name="textColorEarthquakeLocation">#2B3D4D</color>
+    <color name="backColor">@android:color/white</color>
+    <color name="bottomNavTextColor">@color/colorPrimary</color>
+    <color name="toolBarColor">@android:color/white</color>
+    <color name="textColor">#e1e1e1</color>
+    <color name="viewpagerToolBarColor">#121212</color>
+    <color name="viewpagerToolBarTextColor">@android:color/white</color>
+    <color name="coronaColor">#0098cb</color>
+    <color name="settingColor">#B6B6B6</color>
+    <color name="aboutBackColor">#dfdfdf</color>
+    <color name="coronaSubTextColor">#000000</color>
+    <color name="coronaInfoStatusBarColor">#012B73</color>
+    <color name="coronaTextViewColor">#2B3D4D</color>
+    <color name="drawerLineColor">#c0c0c0</color>
+    <color name="detailTextColor">#FFFFFF</color>
+    <color name="detailActColor">#3C8CEF</color>
+    <!-- Text color for the details of the earthquake in the list item -->
+    <color name="textColorEarthquakeDetails">#B4BAC0</color>
+    <color name="darkGrey">#120000</color>
+    <color name="desColor">#424242</color>
+
+</resources>

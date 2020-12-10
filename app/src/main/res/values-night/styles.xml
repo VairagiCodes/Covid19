@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name = "ToolBarStyle" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/textColorEarthquakeLocation</item>
+        <item name="actionMenuTextColor">@color/textColorEarthquakeLocation</item>
+        <item name="color">@color/textColorEarthquakeLocation</item>
+        <item name="colorControlNormal">@color/textColorEarthquakeLocation</item>
+        <item name="android:textColorPrimary">@color/textColorEarthquakeLocation</item>
+    </style>
+
+    <style name="mainTheme" parent="AppTheme">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+</resources>
